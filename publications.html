@@ -2,80 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Yuhao Zhan, Publications, ZJU">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" type="image/png" href="assets/images/Youtube.jpg">
     <title>Publications | Yuhao Zhan</title>
+    <style>
+
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: none;
+  }
+}
+p { font-size : 16px; }
+h1 { font-size : 34px; margin : 0; padding : 0; }
+h2 { font-size : 20px; margin : 0; padding : 0; }
+h3 { font-size : 18px; margin : 8; padding : 0; }
+body { padding : 0; font-family : Arial; font-size : 16px; background-color : rgb(224, 224, 224); }
+.title { width : 650px; margin : 20px auto; }
+.container { width : 750px; margin : 20px auto; border-radius: 10px;  background-color : #fff; padding : 20px;  clear:both;}
+.container_title { width : 750px; margin : 20px auto; border-radius: 10px;  padding : 20px;  clear:both;}
+.iframe_video {float: left; margin-right: 30px}
+#bio {
+    padding-top : 20px;
+}
+#me { border : 0 solid black; margin-bottom : 50px; border-radius : 10px; clip-path: inset(0 0 33.33% 0); }
+#sidebar { margin-left : 50px; margin-right : 100px; border : 0 solid black; float : left; margin-bottom : 0;}
+a { text-decoration : none; }
+a:hover { text-decoration : underline; }
+a, a:visited { color : #0050e7; }
+.publogo { width: 100px; margin-right : 20px; float : left; border : 0;}
+.publication { clear : left; padding-bottom : 0px; }
+.publication p { padding-top : 5px; }
+.publication strong a { color : #0000A0; }
+.publication .links { margin-top : 5px; }
+.publication .links a { margin-right : 20px; }
+.codelogo { margin-right : 10px; float : left; border : 0;}
+.code { clear : left; padding-bottom : 10px; vertical-align :middle;}
+.code .download a { display : block; margin : 0 15px; float : left;}
+.code strong a { color : #000; }
+.external a { margin : 0 10px; }
+.external a.first { margin : 0 10px 0 0; }
+.oral { color: #ff0000; font-weight: bold; }
+    </style>
 </head>
 <body>
-    <div class="sidebar">
-        <img src="assets/images/Youtube.jpg" alt="Yuhao Zhan" class="profile-img">
-        <div class="name">Yuhao Zhan</div>
-        <div class="name-zh">湛雨好</div>
-        
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="publications.html" class="active">Publications</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="talks.html">Talks</a></li>
-            <li><a href="misc.html">Misc</a></li>
-        </ul>
 
-        <div class="social-links">
-            <a href="mailto:yuhao.zhan@zju.edu.cn">Email</a>
-            <a href="https://github.com/yuhao-zhan">GitHub</a>
+    <div class="container">
+        <h2>
+            <a href="./index.html">Home</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="./publications.html">Publications</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="./blog.html">Blog</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="./talks.html">Talks</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="./services.html">Services</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="./awards.html">Awards</a>&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+            <a href="./reading.html">Reading</a>
+        </h2>
+    </div>
+
+    <div class="container">
+        <h2>Publications <small><a href="https://scholar.google.com/citations?user=BiOsrJIAAAAJ&hl=en">[Google Scholar]</a></small></h2>
+        <br>
+        <h3>2026</h3>
+        <div class="publication">
+            <img src="./assets/images/DeepHalluBench.png" class="publogo" style="width: 256px;">
+            <p>
+                <strong><a href="https://arxiv.org/pdf/2601.22984v1">Why Your Deep Research Agent Fails? On Hallucination Evaluation in Full Research Trajectory</a></strong>
+                <br>
+                <br>
+                <u><strong>Yuhao Zhan</strong></u>, Tianyu Fan, Linxuan Huang, Zirui Guo, Chao Huang.
+                <br>
+                <em>Preprint, 2026</em>
+            </p>
+            <span class="links">
+                <a href="https://arxiv.org/pdf/2601.22984v1">PDF</a>
+                <a href="https://github.com/yuhao-zhan/DeepHalluBench">Code</a>
+            </span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="publication">
+            <img src="./assets/images/ThinkGEC_first_image.png" class="publogo" style="width: 256px;">
+            <p>
+                <strong>THINKGEC: A Cognitive and Pedagogical Framework for LLM-based Grammatical Error Correction</strong>
+                <br>
+                <br>
+                Yu Gu*, Yuqing Zhang*, Yawen Zheng, Haoxiang Wu, Jing Yuan, <u><strong>Yuhao Zhan</strong></u>, Zemin Liu, Yuan Li, Jing Ying, Fei Wu.
+                <br>
+                <em>ACL ARR 2026 (Under Review)</em>
+            </p>
+            <span class="links">
+                <a href="#"></a>
+            </span>
         </div>
     </div>
 
-    <main class="main-content">
-        <section>
-            <h2>Publications</h2>
-            <p>For a full list of my research, please visit my <a href="https://scholar.google.com/">Google Scholar</a> profile.</p>
+    <div class="container">
+        <h3>2025</h3>
+        <div class="publication">
+            <img src="./assets/images/JELV_fisrt_image.png" class="publogo" style="width: 256px;">
+            <p>
+                <strong><a href="https://arxiv.org/pdf/2511.21700">JELV: A Judge of Edit-Level Validity for Evaluation and Automated Reference Expansion in Grammatical Error Correction</a></strong>
+                <br>
+                <br>
+                <u><strong>Yuhao Zhan</strong></u>, Yuqing Zhang, Jing Yuan, Qixiang Ma, Zhiqi Yang, Yu Gu, Zemin Liu, Fei Wu.
+                <br>
+                <em>AAAI 2026 (<span class="oral">Oral</span>)</em>
+            </p>
+            <span class="links">
+                <a href="https://arxiv.org/pdf/2511.21700">PDF</a>
+                <a href="https://github.com/yuhao-zhan/JELV">Code</a>
+            </span>
+        </div>
+    </div>
 
-            <div class="publication">
-                <img src="assets/images/DeepHalluBench.png" alt="Paper Thumbnail" class="pub-img">
-                <div class="pub-info">
-                    <h3>Why Your Deep Research Agent Fails? On Hallucination Evaluation in Full Research Trajectory</h3>
-                    <div class="pub-authors"><strong>Yuhao Zhan</strong>, Tianyu Fan, Linxuan Huang, Zirui Guo, Chao Huang</div>
-                    <div class="pub-venue">Preprint, 2026</div>
-                    <div class="pub-links">
-                        <a href="https://arxiv.org/pdf/2601.22984v1">PDF</a>
-                        <a href="#">BibTeX</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="publication">
-                <img src="assets/images/JELV_fisrt_image.png" alt="Paper Thumbnail" class="pub-img">
-                <div class="pub-info">
-                    <h3>JELV: A Judge of Edit-Level Validity for Evaluation and Automated Reference Expansion in Grammatical Error Correction</h3>
-                    <div class="pub-authors"><strong>Yuhao Zhan</strong>, Yuqing Zhang, Jing Yuan, Qixiang Ma, Zhiqi Yang, Yu Gu, Zemin Liu, Fei Wu</div>
-                    <div class="pub-venue">AAAI 2026 (Oral)</div>
-                    <div class="pub-links">
-                        <a href="https://arxiv.org/pdf/2511.21700">PDF</a>
-                        <a href="#">BibTeX</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="publication">
-                <img src="assets/images/ThinkGEC_first_image.png" alt="Paper Thumbnail" class="pub-img">
-                <div class="pub-info">
-                    <h3>THINKGEC: A Cognitive and Pedagogical Framework for LLM-based Grammatical Error Correction</h3>
-                    <div class="pub-authors">Yu Gu*, Yuqing Zhang*, Yawen Zheng, Haoxiang Wu, Jing Yuan, <strong>Yuhao Zhan</strong>, Zemin Liu, Yuan Li, Jing Ying, Fei Wu</div>
-                    <div class="pub-venue">ACL 2026 (In Submission)</div>
-                    <div class="pub-links">
-                        <a href="#">PDF</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <footer style="margin-top: 100px; color: #999; font-size: 14px;">
-            <p>&copy; 2026 Yuhao Zhan. All rights reserved.</p>
-        </footer>
-    </main>
 </body>
 </html>

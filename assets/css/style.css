@@ -164,8 +164,7 @@ body > .container:first-of-type a:hover {
 .page-blog > .container:first-of-type a[href="./blog.html"],
 .page-talks > .container:first-of-type a[href="./talks.html"],
 .page-services > .container:first-of-type a[href="./services.html"],
-.page-awards > .container:first-of-type a[href="./awards.html"],
-.page-reading > .container:first-of-type a[href="./reading.html"] {
+.page-awards > .container:first-of-type a[href="./awards.html"] {
     color: var(--purple);
     font-weight: 700;
 }
@@ -189,8 +188,7 @@ body > .container:first-of-type a:hover {
 
 #sidebar::before,
 #bio::before,
-.page-home > .container:nth-of-type(2)::after,
-.book-card::before {
+.page-home > .container:nth-of-type(2)::after {
     display: none;
     content: none;
 }
@@ -279,8 +277,7 @@ body > .container:first-of-type a:hover {
     line-height: 1.6;
 }
 
-.publication strong a,
-.reading-item .title-row strong a {
+.publication strong a {
     color: var(--purple-dark);
 }
 
@@ -332,55 +329,6 @@ p[style*="text-align: right"] a {
     background: transparent;
     font-size: 18px;
     font-weight: 400;
-}
-
-/* Reading page */
-.books-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px 28px;
-}
-
-.book-card {
-    padding: 0 0 16px;
-    border: 0;
-    border-bottom: 1px solid var(--rule);
-    border-radius: 0;
-    background: transparent;
-}
-
-.book-card .title-row {
-    margin-bottom: 5px;
-}
-
-.book-card .title-row strong {
-    color: var(--purple-dark);
-    font-size: 18px;
-}
-
-.book-card .meta,
-.reading-item .meta {
-    margin-bottom: 7px;
-    color: var(--muted);
-    font-size: 16px;
-}
-
-.reading-item {
-    clear: both;
-    padding: 16px 0;
-    border-bottom: 1px solid var(--rule);
-}
-
-.reading-item:last-child {
-    border-bottom: 0;
-}
-
-.reading-item .title-row {
-    margin-bottom: 5px;
-}
-
-.reading-item .title-row strong a {
-    font-size: 18px;
 }
 
 .tag {
@@ -522,10 +470,6 @@ p[style*="text-align: right"] a {
 }
 
 @media (max-width: 540px) {
-    .books-grid {
-        grid-template-columns: 1fr;
-    }
-
     .publication {
         grid-template-columns: 72px minmax(0, 1fr);
         column-gap: 16px;

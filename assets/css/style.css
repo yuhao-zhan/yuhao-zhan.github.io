@@ -134,7 +134,8 @@ body > .container:first-of-type {
     background: transparent;
 }
 
-body > .container:first-of-type h2 {
+body > .container:first-of-type h2,
+.site-nav-links {
     display: block;
     margin: 0;
     color: var(--muted);
@@ -161,12 +162,81 @@ body > .container:first-of-type a:hover {
 
 .page-home > .container:first-of-type a[href="./index.html"],
 .page-publications > .container:first-of-type a[href="./publications.html"],
-.page-blog > .container:first-of-type a[href="./blog.html"],
+.page-blog > .container:first-of-type .blog-nav-link,
 .page-talks > .container:first-of-type a[href="./talks.html"],
 .page-services > .container:first-of-type a[href="./services.html"],
 .page-awards > .container:first-of-type a[href="./awards.html"] {
     color: var(--purple);
     font-weight: 700;
+}
+
+/* Blog */
+.blog-index,
+.blog-post {
+    border-top: 1px solid var(--rule);
+}
+
+.blog-year {
+    margin: 28px 0 12px;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.blog-back {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: var(--purple);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.blog-post-header,
+.blog-prose {
+    max-width: 66ch;
+    margin-inline: auto;
+}
+
+.blog-post-header {
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--rule);
+}
+
+.blog-post-header h1 {
+    font-size: clamp(32px, 6vw, 48px);
+}
+
+.blog-post-header p {
+    margin: 12px 0 0;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+.blog-prose p {
+    margin: 0 0 1em;
+    font-family: Georgia, serif;
+    font-size: clamp(18px, 2.3vw, 20px);
+    line-height: 1.75;
+}
+
+.blog-prose h2 {
+    margin: 1.5em 0 0.65em;
+}
+
+.blog-verse {
+    margin: 24px 0 0;
+    padding: 18px 20px;
+    border-inline-start: 3px solid var(--purple-light);
+    background: var(--purple-wash);
+}
+
+.blog-verse blockquote {
+    margin: 0;
+}
+
+.blog-verse figcaption {
+    color: var(--muted);
+    font-size: 15px;
 }
 
 /* Home introduction */
